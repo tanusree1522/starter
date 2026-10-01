@@ -64,3 +64,21 @@ a { color:inherit; }
 .library-card,.toolkit-card,.prompt-card,.stat-card,.quote-card{color:var(--ink)}
 .library-card h3,.toolkit-card summary,.prompt-card p,.quote-card p{color:var(--ink)}
 
+/* Keep About & Feedback aligned with the cream learning surfaces. */
+.footer-section{background:#e8eee9;color:var(--navy);}
+.footer-section .eyebrow{color:#14705c;}
+.footer-section h2{color:var(--navy);}
+.footer-section p{color:#294653;}
+.footer-section p.muted{color:#46606e;}
+.footer-section .feedback-box label{color:#294653;}
+.footer-section .feedback-box textarea{background:#fffef8;color:var(--navy);border:1px solid rgba(16,43,59,.25);}
+.footer-section .feedback-box textarea::placeholder{color:#60747a;}
+.footer-section .feedback-box textarea:focus-visible{border-color:#14705c;outline:3px solid var(--coral);outline-offset:3px;}
+.footer-section .feedback-actions .button.ghost{background:var(--navy);color:#fff;border-color:var(--navy);}
+.footer-section .feedback-actions .button.ghost:hover{background:#14705c;border-color:#14705c;color:#fff;}
+.footer-section .feedback-actions .icon-button{color:#14705c;}
+.footer-section .feedback-actions .icon-button:hover{color:var(--navy);}
+.site-footer{background:#e8eee9;color:#46606e;}
+.site-footer .brand{color:var(--navy);}
+.site-footer a{color:#14705c;}
+

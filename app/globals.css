@@ -36,3 +36,22 @@ a { color:inherit; }
 @media (max-width:800px){.nav{background:var(--navy)}.resources-grid{grid-template-columns:1fr}}
 @media (prefers-reduced-motion:reduce){.hero:before{animation:none}.resource-card,.library-card,.toolkit-card{transition:none}}
 
+/* Keep interactive learning surfaces readable in the dark theme. */
+.exercise{background:var(--navy-2);color:var(--ink);border-color:rgba(121,224,192,.35)}
+.exercise .choices{color:var(--ink)}
+.exercise .choices>p,.exercise .choices>p strong{color:var(--ink)}
+.exercise .choices button{background:var(--surface);color:var(--ink);border:1px solid rgba(121,224,192,.32);transition:background-color .2s ease,border-color .2s ease,color .2s ease}
+.exercise .choices button:hover{background:var(--surface-2);color:#fff;border-color:var(--teal)}
+.exercise .choices button:focus-visible{background:var(--surface-2);color:#fff;border-color:var(--teal);outline:3px solid var(--coral);outline-offset:3px}
+.exercise .choices button.selected{background:#17455a;color:#fff;border-color:var(--teal)}
+.exercise .choices button span{color:inherit}
+.exercise .feedback{background:#5a302b;color:#fff;border:1px solid #f49b7d}
+.exercise .feedback.good{background:#174d49;color:#fff;border:1px solid var(--teal)}
+
+/* Prevent inherited light-on-light text across reusable light-surface components. */
+.notice,.improved{background:var(--surface-2);color:var(--ink);border:1px solid rgba(121,224,192,.28)}
+.notice p,.improved p{color:var(--ink)}
+.label.teal{color:var(--navy)}
+.library-card,.toolkit-card,.prompt-card,.stat-card,.quote-card{color:var(--ink)}
+.library-card h3,.toolkit-card summary,.prompt-card p,.quote-card p{color:var(--ink)}
+
